@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Game</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    button {
+      font-size: 24px; padding: 20px; border-radius: 12px;
+      background: gold; border: none; cursor: pointer;
+    }
+    h1 { font-size: 32px; }
+  </style>
+</head>
+<body>
+  <h1>🔥 Bosish o‘yini 🔥</h1>
+  <p>Ballaringiz: <span id="score">0</span></p>
+  <button onclick="clickMe()">Bos!</button>
+
+  <script>
+    let score = 0;
+    function clickMe() {
+      score++;
+      document.getElementById("score").innerText = score;
+    }
+  </script>
+</body>
+</html>
